@@ -112,52 +112,52 @@ f.head()
     <tr>
       <th>0</th>
       <td>@BBCWorld</td>
-      <td>0.0000</td>
-      <td>0.0</td>
-      <td>1.000</td>
+      <td>-0.5574</td>
+      <td>0.419</td>
+      <td>0.581</td>
       <td>0.000</td>
-      <td>Can the ad industry persuade us to eat more ve...</td>
-      <td>Wed Mar 28 00:41:30 +0000 2018</td>
+      <td>Australia bans cricketers over cheating https:...</td>
+      <td>Wed Mar 28 14:06:10 +0000 2018</td>
     </tr>
     <tr>
       <th>1</th>
       <td>@BBCWorld</td>
-      <td>0.2732</td>
-      <td>0.0</td>
-      <td>0.792</td>
-      <td>0.208</td>
-      <td>5 pop songs you didn't know were about God htt...</td>
-      <td>Wed Mar 28 00:33:33 +0000 2018</td>
+      <td>0.7650</td>
+      <td>0.000</td>
+      <td>0.431</td>
+      <td>0.569</td>
+      <td>Did lottery win teen choose wisely? https://t....</td>
+      <td>Wed Mar 28 13:42:35 +0000 2018</td>
     </tr>
     <tr>
       <th>2</th>
       <td>@BBCWorld</td>
-      <td>0.4404</td>
-      <td>0.0</td>
-      <td>0.804</td>
-      <td>0.196</td>
-      <td>Kim Jong-un's Beijing visit is considered a si...</td>
-      <td>Wed Mar 28 00:16:30 +0000 2018</td>
+      <td>0.0000</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>0.000</td>
+      <td>Ireland to get first official nude beach https...</td>
+      <td>Wed Mar 28 13:37:05 +0000 2018</td>
     </tr>
     <tr>
       <th>3</th>
       <td>@BBCWorld</td>
-      <td>0.5859</td>
-      <td>0.0</td>
-      <td>0.817</td>
-      <td>0.183</td>
-      <td>@BBCBreaking North Korea's leader Kim Jong-un ...</td>
-      <td>Wed Mar 28 00:04:15 +0000 2018</td>
+      <td>-0.2960</td>
+      <td>0.196</td>
+      <td>0.804</td>
+      <td>0.000</td>
+      <td>Adea Shabani: Body of missing actress 'found' ...</td>
+      <td>Wed Mar 28 13:37:05 +0000 2018</td>
     </tr>
     <tr>
       <th>4</th>
       <td>@BBCWorld</td>
-      <td>0.0000</td>
-      <td>0.0</td>
-      <td>1.000</td>
-      <td>0.000</td>
-      <td>China confirms Kim Jong-un visit https://t.co/...</td>
-      <td>Tue Mar 27 23:50:38 +0000 2018</td>
+      <td>-0.6808</td>
+      <td>0.255</td>
+      <td>0.669</td>
+      <td>0.076</td>
+      <td>RT @BBCSport: A country at war, no league comp...</td>
+      <td>Wed Mar 28 13:36:10 +0000 2018</td>
     </tr>
   </tbody>
 </table>
@@ -170,6 +170,7 @@ f.head()
 xval=[i for i in range(100)]
 for i in target_user:
     plt.scatter(xval,f.groupby('Author of Tweet').get_group(i)['Compound Score'])
+plt.xlim(103, -3)
 plt.legend(target_user,bbox_to_anchor=(.3, 0, 1., 1.02),title='Media Sources')
 plt.xlabel('Tweets Ago')
 plt.ylabel('Tweet Polarity')
