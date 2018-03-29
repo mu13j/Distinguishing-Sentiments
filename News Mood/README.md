@@ -44,10 +44,10 @@ account=[]
 texts=[]
 for user in target_user:
     # Loop through 5 pages of tweets (total 100 tweets)
-    for x in range(5):
+    for x in range(1,6):
 
         # Get all tweets from home feed
-        public_tweets = api.user_timeline(user)
+        public_tweets = api.user_timeline(user,page=x)
 
         # Loop through all tweets
         for tweet in public_tweets:
@@ -112,52 +112,52 @@ f.head()
     <tr>
       <th>0</th>
       <td>@BBCWorld</td>
-      <td>-0.5574</td>
-      <td>0.419</td>
-      <td>0.581</td>
+      <td>0.0000</td>
       <td>0.000</td>
-      <td>Australia bans cricketers over cheating https:...</td>
-      <td>Wed Mar 28 14:06:10 +0000 2018</td>
+      <td>1.000</td>
+      <td>0.00</td>
+      <td>Madrid police dogs get 'Mozart effect' music t...</td>
+      <td>Wed Mar 28 15:37:10 +0000 2018</td>
     </tr>
     <tr>
       <th>1</th>
       <td>@BBCWorld</td>
-      <td>0.7650</td>
+      <td>0.2235</td>
       <td>0.000</td>
-      <td>0.431</td>
-      <td>0.569</td>
-      <td>Did lottery win teen choose wisely? https://t....</td>
-      <td>Wed Mar 28 13:42:35 +0000 2018</td>
+      <td>0.910</td>
+      <td>0.09</td>
+      <td>RT @BBCNews: "I have cerebral palsy. But that ...</td>
+      <td>Wed Mar 28 15:31:26 +0000 2018</td>
     </tr>
     <tr>
       <th>2</th>
       <td>@BBCWorld</td>
-      <td>0.0000</td>
-      <td>0.000</td>
-      <td>1.000</td>
-      <td>0.000</td>
-      <td>Ireland to get first official nude beach https...</td>
-      <td>Wed Mar 28 13:37:05 +0000 2018</td>
+      <td>-0.7096</td>
+      <td>0.457</td>
+      <td>0.543</td>
+      <td>0.00</td>
+      <td>Alexandre Bissonnette pleads guilty to Quebec ...</td>
+      <td>Wed Mar 28 14:46:13 +0000 2018</td>
     </tr>
     <tr>
       <th>3</th>
       <td>@BBCWorld</td>
-      <td>-0.2960</td>
-      <td>0.196</td>
-      <td>0.804</td>
-      <td>0.000</td>
-      <td>Adea Shabani: Body of missing actress 'found' ...</td>
-      <td>Wed Mar 28 13:37:05 +0000 2018</td>
+      <td>-0.4767</td>
+      <td>0.279</td>
+      <td>0.721</td>
+      <td>0.00</td>
+      <td>Clara Ponsati: Arrested Catalan politician rel...</td>
+      <td>Wed Mar 28 14:34:06 +0000 2018</td>
     </tr>
     <tr>
       <th>4</th>
       <td>@BBCWorld</td>
-      <td>-0.6808</td>
-      <td>0.255</td>
-      <td>0.669</td>
-      <td>0.076</td>
-      <td>RT @BBCSport: A country at war, no league comp...</td>
-      <td>Wed Mar 28 13:36:10 +0000 2018</td>
+      <td>-0.5574</td>
+      <td>0.419</td>
+      <td>0.581</td>
+      <td>0.00</td>
+      <td>Australia bans cricketers over cheating https:...</td>
+      <td>Wed Mar 28 14:06:10 +0000 2018</td>
     </tr>
   </tbody>
 </table>
