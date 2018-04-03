@@ -1,5 +1,10 @@
 
 
+# Observations
+* The news at the time of my analysis seemed mostly negative.
+* CBS news, on the other hand, had a fairly positive spread of tweets.
+* Most of the tweets were rated at completely neutral (0).
+
 ```python
 # Dependencies
 import tweepy
